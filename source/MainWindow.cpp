@@ -48,6 +48,6 @@ void MainWindow::createFileMenu()
 	auto menu = menuBar()->addMenu(tr("&File"));
 	auto action = menu->addAction(tr("E&xit"));
 	assert(action);
-	connect(action, &QAction::trigger, this, &MainWindow::onFileExit);
-	//connect(action, SIGNAL(trigger()), this, SLOT(onFileExit()));
+	connect(action, &QAction::triggered, this, &MainWindow::onFileExit);
+	//connect(action, SIGNAL(triggered()), this, SLOT(onFileExit()));
 }
