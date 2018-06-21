@@ -22,12 +22,12 @@ SOURCES += main.cpp \
 	MainWindow.cpp \
 	CentralWidget.cpp \
 	DataSet.cpp\
-	DetailControl.cpp \
-	DataItemControl.cpp
+	DataItemControl.cpp \
+	Package.cpp
 
 
 HEADERS += MainWindow.h \
 	CentralWidget.h \
 	DataSet.h \
-	DetailControl.h \
-	DataItemControl.h
+	DataItemControl.h \
+	Package.h

@@ -11,5 +11,11 @@ class MainWindow : public QMainWindow
 		~MainWindow();
 	private:
 		void initialize();
+		void createMenu();
+		void createFileMenu();
+		void createHelpMenu();
+		void createEditMenu();
+	private slots:
+		void onFileExit();
 };
 #endif//__mainwindow__h
