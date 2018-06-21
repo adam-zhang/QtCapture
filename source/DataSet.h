@@ -6,7 +6,7 @@
 class DataSet : public QTableView 
 {
 	public:
-		DataSet(QWidget*);
+		DataSet(QWidget* parent = NULL);
 
 };
 #endif//__dataset__h

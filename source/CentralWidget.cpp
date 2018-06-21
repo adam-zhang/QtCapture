@@ -3,7 +3,8 @@
 #include <QHBoxLayout>
 #include <cassert>
 #include "DataSet.h"
-//#include "DetailControl.h"
+#include <QTextEdit>
+#include "DataItemControl.h"
 
 CentralWidget::CentralWidget(QWidget* parent)
 	: QWidget(parent)
@@ -25,7 +26,7 @@ QSplitter* CentralWidget::createSplitter()
 {
 	auto splitter = new QSplitter;
 	assert(splitter);
-	splitter->addWidget(new DataSet(splitter));
-	splitter->addWidget(new DetailControl);
+	splitter->addWidget(new DataSet);
+	splitter->addWidget(new DataItemControl);
 	return splitter;
 }
